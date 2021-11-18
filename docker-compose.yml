@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+
+  frontend:
+    build: ./frontend
+    ports:
+     - "8080:8080"
+     
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+
+  # redis:
+  #   # will use docker hub's redis prebuilt image from here:
+  #   # https://hub.docker.com/_/redis/
+  #   image: "redis:alpine"

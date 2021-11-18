@@ -47,7 +47,7 @@ export default {
     },
     async getEmoji() {
       const response = await axios.get('http://localhost:3000/emoji');
-      return response.data;
+      return response.data; 
     }
   },
 };
