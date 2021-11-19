@@ -27,7 +27,7 @@ COPY . .
 
 # Expongo el puerto donde esta corriendo la app de express 
 # hacia el exterior del container
-EXPOSE 8080
+EXPOSE 3000
 
 # Por ultimo, definimos el comando que se quiere que se ejecute al final para arrancar
 # la aplicacion express

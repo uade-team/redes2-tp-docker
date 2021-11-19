@@ -11,6 +11,10 @@ app.get('/emoji', (req, res) => {
     res.send(getRandomEmoji());
 })
 
+app.get('/', (req, res) => {
+  res.send("<h1>Servidor corriendo exitosamente! :D</h1>");
+})
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
